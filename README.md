@@ -9,3 +9,4 @@ Reference Bookmarks for DevOps
 
 ### CI/CD
 1. [Travis CI + Ruby on Rails](http://tech.eshaiju.in/blog/2015/08/09/travis-ci-integration-step-by-step-tutorial/)
+2. [Setup Jenkins + Ruby on Rails](http://nithinbekal.com/posts/jenkins-rails/)
