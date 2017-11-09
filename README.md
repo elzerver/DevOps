@@ -14,3 +14,7 @@ Reference Bookmarks for DevOps
 
 ### Jenkins
 1. [Jenkins Examples](https://github.com/wearefine?utf8=%E2%9C%93&q=jenkins&type=&language=)
+
+
+### Bash Utilities
+1. [Bash exit Docker](http://blog.ministryofprogramming.com/docker-compose-and-exit-codes/)
