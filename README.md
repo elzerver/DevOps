@@ -18,3 +18,8 @@ Reference Bookmarks for DevOps
 
 ### Bash Utilities
 1. [Bash exit Docker](http://blog.ministryofprogramming.com/docker-compose-and-exit-codes/)
+
+
+### Docker
+
+1. [Deploy to a Cluster Swarm - Webinar ](https://codefresh.io/blog/webinar-development-swarm-cluster-docker-compose-v3/)
