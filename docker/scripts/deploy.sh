@@ -1,8 +1,9 @@
 #!/bin/bash
-
+# Author: Me
 # Data output example
 # echo "Error response from daemon: conflict: unable to delete 838f3ec33df2 (cannot be forced) - image is being used by running container 621d23bd704f")
 # The first step is store the values of the actual running container
+
 DELETE_IMAGE=$(docker images | grep latest | grep amazonaws | awk -F' ' '{print $3}')
 CONTAINER_STOP=$(docker ps | awk -F' ' '{print $1}'| grep -v CONTAINER)
 CONTAINER_RM=$CONTAINER_STOP
