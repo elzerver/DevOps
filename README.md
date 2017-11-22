@@ -10,3 +10,26 @@ Reference Bookmarks for DevOps
 ### CI/CD
 1. [Travis CI + Ruby on Rails](http://tech.eshaiju.in/blog/2015/08/09/travis-ci-integration-step-by-step-tutorial/)
 2. [Setup Jenkins + Ruby on Rails](http://nithinbekal.com/posts/jenkins-rails/)
+3. [Automated promotion with Jenkins - Cloudbees](https://www.cloudbees.com/blog/automating-application-releases-docker)
+
+### Jenkins
+1. [Jenkins Examples](https://github.com/wearefine?utf8=%E2%9C%93&q=jenkins&type=&language=)
+
+
+### Bash Utilities
+1. [Bash exit Docker](http://blog.ministryofprogramming.com/docker-compose-and-exit-codes/)
+
+
+### Docker
+
+1. [Deploy to a Cluster Swarm - Webinar ](https://codefresh.io/blog/webinar-development-swarm-cluster-docker-compose-v3/)
+2. [Introduction to Docker](http://docker.atbaker.me/index.html)
+
+### Tools
+
+## VIM
+1. [Console in VIM](https://neovim.io/doc/user/nvim_terminal_emulator.html)
+
+
+### AWS 
+[How to become a Cloud Architect](https://cloudacademy.com/blog/what-exactly-is-a-cloud-architect-and-how-do-you-become-one/)
