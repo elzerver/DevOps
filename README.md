@@ -29,3 +29,7 @@ Reference Bookmarks for DevOps
 
 ## VIM
 1. [Console in VIM](https://neovim.io/doc/user/nvim_terminal_emulator.html)
+
+
+### AWS 
+[How to become a Cloud Architect](https://cloudacademy.com/blog/what-exactly-is-a-cloud-architect-and-how-do-you-become-one/)
