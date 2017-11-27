@@ -24,6 +24,7 @@ Reference Bookmarks for DevOps
 
 1. [Deploy to a Cluster Swarm - Webinar ](https://codefresh.io/blog/webinar-development-swarm-cluster-docker-compose-v3/)
 2. [Introduction to Docker](http://docker.atbaker.me/index.html)
+3. [non-root user - Docker](http://gbraad.nl/blog/non-root-user-inside-a-docker-container.html)
 
 ### Tools
 
