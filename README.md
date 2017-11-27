@@ -30,6 +30,7 @@ Reference Bookmarks for DevOps
 
 ## VIM
 1. [Console in VIM](https://neovim.io/doc/user/nvim_terminal_emulator.html)
+2. [Cheatsheet - Vim](http://www.worldtimzone.com/res/vi.html)
 
 
 ### AWS 
