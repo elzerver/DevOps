@@ -12,6 +12,9 @@ Reference Bookmarks for DevOps
 2. [Setup Jenkins + Ruby on Rails](http://nithinbekal.com/posts/jenkins-rails/)
 3. [Automated promotion with Jenkins - Cloudbees](https://www.cloudbees.com/blog/automating-application-releases-docker)
 4. [No Budget CI](https://www.deployhub.org/)
+5. [What is and what is not CD/CD](https://devops.com/continuous-delivery-vs-continuous-deployment/)
+
+
 ### Jenkins
 1. [Jenkins Examples](https://github.com/wearefine?utf8=%E2%9C%93&q=jenkins&type=&language=)
 
