@@ -13,7 +13,7 @@ Reference Bookmarks for DevOps
 3. [Automated promotion with Jenkins - Cloudbees](https://www.cloudbees.com/blog/automating-application-releases-docker)
 4. [No Budget CI](https://www.deployhub.org/)
 5. [What is and what is not CD/CD](https://devops.com/continuous-delivery-vs-continuous-deployment/)
-
+6. [ CI Vs ARA ](http://electric-cloud.com/resources/continuous-delivery-101/continuous-deployment/)
 
 ### Jenkins
 1. [Jenkins Examples](https://github.com/wearefine?utf8=%E2%9C%93&q=jenkins&type=&language=)
