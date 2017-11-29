@@ -38,3 +38,4 @@ Reference Bookmarks for DevOps
 
 ### AWS 
 [How to become a Cloud Architect](https://cloudacademy.com/blog/what-exactly-is-a-cloud-architect-and-how-do-you-become-one/)
+[AWS ECS HA](https://aws.amazon.com/es/getting-started/tutorials/deploy-docker-containers/)
