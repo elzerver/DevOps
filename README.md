@@ -40,6 +40,9 @@ Reference Bookmarks for DevOps
 [How to become a Cloud Architect](https://cloudacademy.com/blog/what-exactly-is-a-cloud-architect-and-how-do-you-become-one/)
 [AWS ECS HA](https://aws.amazon.com/es/getting-started/tutorials/deploy-docker-containers/)
 
+### Tmux
+[Pretty-Tmux](http://www.hamvocke.com/blog/a-guide-to-customizing-your-tmux-conf/)
+
 
 ###  To Review
 
