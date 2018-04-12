@@ -1,14 +1,31 @@
+servers=[
+  {
+    :domainname => "jenkins-master",
+    :hostname => "local-jenkins",
+    :ip => "192.168.42.2",
+    :alias => "example1-dotcom"
+  },
+  {
+    :domainname => "jenkins-slave",
+    :hostname => "local-jenkins",
+    :ip => "192.168.42.3",
+    :alias => "example2-dotcom"
+  }
+]
+
 Vagrant.configure("2") do |config|
-  config.vm.box = "centos/7"
-  config.ssh.insert_key = false
-  config.hostmanager.enabled = true
-  config.hostmanager.manage_host = true
-  config.hostmanager.manage_guest = true
-  config.hostmanager.ignore_private_ip = false
-  config.hostmanager.include_offline = true
-  config.vm.define 'example-box' do |node|
-    node.vm.hostname = 'local-jenkins'
-    node.vm.network :private_network, ip: '192.168.42.2'
-    node.hostmanager.aliases = %w(example-dotcom)  
+  servers.each do |machine|
+    config.vm.box = "centos/7"
+    config.ssh.insert_key = false
+    config.hostmanager.enabled = true
+    config.hostmanager.manage_host = true
+    config.hostmanager.manage_guest = true
+    config.hostmanager.ignore_private_ip = false
+    config.hostmanager.include_offline = true
+    config.vm.define machine[:domainname] do |node|
+      node.vm.hostname = machine[:hostname]
+      node.vm.network :private_network, ip: machine[:ip]
+      node.hostmanager.aliases = %w(machine[:alias])
+  end
  end
 end
