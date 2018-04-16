@@ -1,0 +1,4 @@
+---
+- hosts: jenkins-master
+  roles:
+          - jenkins-master
