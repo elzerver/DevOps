@@ -1,9 +1,9 @@
 ---
 - name: Install VIM
-  yum: name=vim state:present
+  yum: name=vim state=present
 
 - name: Install wget
-  yum: name=wget state:present
+  yum: name=wget state=present
 
 - name: Add the jenkins repo into the yum repo folder
   command: wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo
