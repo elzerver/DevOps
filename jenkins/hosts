@@ -1,2 +1,4 @@
 [jenkins]
-example-dotcom
+jenkins-master
+[slave]
+jenkins-slave
