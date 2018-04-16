@@ -1,4 +1,5 @@
 ---
 - hosts: jenkins-slave
+  become: yes
   roles:
           - jenkins-slave
