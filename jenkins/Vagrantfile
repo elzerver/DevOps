@@ -1,13 +1,13 @@
 servers=[
   {
     :domainname => "jenkins-master",
-    :hostname => "local-jenkins",
+    :hostname => "jenkins-master",
     :ip => "192.168.42.2",
     :alias => "example1-dotcom"
   },
   {
     :domainname => "jenkins-slave",
-    :hostname => "local-jenkins",
+    :hostname => "jenkins-slave",
     :ip => "192.168.42.3",
     :alias => "example2-dotcom"
   }
