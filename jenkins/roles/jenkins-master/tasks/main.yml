@@ -1,0 +1,32 @@
+---
+- hosts: all
+  become: yes
+
+  tasks:
+    - name: Install VIM
+      yum: name=vim state=present
+
+    - name: Install wget
+      yum: name=wget state=present
+
+    - name: Add the repo into the yum repo folder
+      command: wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo
+
+    - name: Add the key of the repo to avoid a MIM attack
+      command: rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
+
+    - name: Install OpenJDK8
+      yum: name=java-1.8.0-openjdk-devel state=present
+
+
+    - name: Install Jenkins
+      yum: name=jenkins state=present
+      update_cache: yes
+      register: jenkins-service
+
+    - name: Start Jenkins service
+      service:
+              name: jenkins
+              state: restarted
+
+
