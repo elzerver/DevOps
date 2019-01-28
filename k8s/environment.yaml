@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: env-dump
+  namespace: default
+spec:
+  containers:
+  - name: busybox
+    image: busybox
+    command:
+      - env
+    env:
+    - name: STUDENT_NAME
+      value: "Your Name"
+    - name: SCHOOL
+      value: "Some School"
+    - name: KUBERNETS
+      value: "is awesome"

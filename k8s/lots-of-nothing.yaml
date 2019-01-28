@@ -1,0 +1,19 @@
+apiVersion: apps/v1Beta2
+kind: Deployment
+metadata:
+  name: lots-of-nothing
+spec:
+  selector:
+    matchLabels:
+      app: pause
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: pause
+    spec:
+      containers:
+      - name: pause
+        image: pause:2.0
+        ports:
+        - containerPort: 80
