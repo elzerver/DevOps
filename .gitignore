@@ -135,3 +135,6 @@ dmypy.json
 
 # Ansible retry 
 *.retry
+
+# Remove .vscode
+*.vscode

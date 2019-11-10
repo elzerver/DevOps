@@ -1,0 +1,19 @@
+# Application Servers
+[app]
+192.168.60.4
+192.168.60.5
+
+# Database server
+[db]
+192.168.60.6
+
+# Group multi with all servers
+[multi:children]
+app
+db
+
+# Variables that will be applied
+[multi:vars]
+ansible_ssh_user=vagrant
+ansible_ssh_pass=vagrant
+

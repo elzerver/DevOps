@@ -1,0 +1,5 @@
+download_dir: /tmp
+solr_dir: /opt/solr
+solr_version: 6.5.1
+solr_checksum: sha1:2cc43b837743949a46bd7efbab14b43f6d92b4b8
+openjdk_centos: java-1.8.0-openjdk

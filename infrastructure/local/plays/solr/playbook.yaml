@@ -1,0 +1,45 @@
+---
+- hosts: all
+  become: yes
+
+  vars_files:
+    - vars.yaml
+
+  pre_tasks:
+    - name: Update yum cahe if needed.
+      yum: update_cache=yes list=no
+  
+  handlers:
+    - name: restart solr
+      service: name=solr state=restarted
+
+  tasks:
+    - name: Install Java
+      yum: name={{ openjdk_centos }} state=present
+
+    - name: Download Solr.
+      get_url:
+        url: "https://archive.apache.org/dist/lucene/solr/{{ solr_version }}/solr-{{ solr_version }}.tgz"
+        dest: "{{ download_dir }}/solr-{{ solr_version }}.tgz"
+        checksum: "{{ solr_checksum }}"
+
+    - name: Expand Solr.
+      unarchive:
+        src: "{{ download_dir }}/solr-{{ solr_version }}.tgz"
+        dest: "{{ download_dir }}"
+        copy: no
+        creates: "{{ download_dir }}/solr-{{ solr_version }}/README.txt"
+
+    - name: Run Solr installation script
+      shell: >
+        {{ download_dir }}/solr-{{ solr_version }}/bin/install_solr_service.sh
+        {{ download_dir }}/solr-{{ solr_version }}.tgz
+        - i /opt
+        - d /var/solr
+        - u solr
+        - s solr
+        - p 8983
+        creates={{ solr_dir }}/bin/solr
+
+    - name: Ensure solr is started and enabled on boot
+      service: name=solr state=started enabled=yes
