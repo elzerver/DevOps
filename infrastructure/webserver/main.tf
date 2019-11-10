@@ -30,6 +30,10 @@ resource "aws_instance" "example" {
   instance_type = "t2.micro"
   vpc_security_group_ids = ["${aws_security_group.instance.id}"]
 
+  provisioner "local-exec" {
+    command = "echo ${aws_instance.example.public_ip} > ip_address.txt"
+  }
+
   user_data = <<-EOF
         #!/bin/bash
         echo "Hello world" > index.html
@@ -38,6 +42,7 @@ resource "aws_instance" "example" {
   tags {
     Name = "terraform-example"
   }
+
 }
 
 resource "aws_security_group" "instance" {
@@ -50,6 +55,11 @@ resource "aws_security_group" "instance" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 }
+
+resource "aws_eip" "ip" {
+  instance = "${aws_instance.example.id}"
+}
+
 
 output "public_ip" {
   value = "${aws_instance.example.public_ip}"
